@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Ritesh Sahebrav Rajput, a BCA student and aspiring web developer from Surat, India."
+    />
+    <meta
+      name="keywords"
+      content="Ritesh Sahebrav Rajput, web developer portfolio, Surat web developer, creative developer, BCA student"
+    />
+    <meta property="og:title" content="Ritesh Sahebrav Rajput — Web Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Personal portfolio of Ritesh Sahebrav Rajput, a BCA student and aspiring web developer from Surat, India."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/portrait-placeholder.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Ritesh Sahebrav Rajput — Web Developer Portfolio</title>
+    <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#top" class="brand" aria-label="Ritesh home">RITESH.</a>
+
+        <div class="nav-links" aria-label="Primary navigation links">
+          <a href="#work">WORK</a>
+          <a href="#about">ABOUT</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+
+        <div class="nav-actions">
+          <button type="button" class="theme-toggle" aria-label="Toggle dark and light theme">
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
+            <span class="toggle-label">DARK</span>
+          </button>
+          <a href="#contact" class="nav-status">AVAILABLE FOR WORK</a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation menu">
+        <nav>
+          <a href="#work">WORK</a>
+          <a href="#about">ABOUT</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow reveal">PORTFOLIO / 2026</p>
+
+          <h1 class="hero-title" aria-label="Ritesh Rajput">
+            <span class="reveal">RITESH</span>
+            <span class="reveal hero-title-large">RAJPUT</span>
+          </h1>
+
+          <p class="hero-role reveal">WEB DEVELOPER · BCA STUDENT · CREATIVE BUILDER</p>
+
+          <p class="hero-statement reveal">
+            I build digital experiences that feel as good as they work.
+          </p>
+
+          <p class="hero-support reveal">
+            A BCA student from Surat focused on building clean, functional and visually refined websites and digital experiences.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#work">VIEW SELECTED WORK <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#contact">CONTACT ME <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="scroll-indicator reveal">
+            <span>SCROLL TO EXPLORE</span>
+            <span aria-hidden="true">↓</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-photo">
+          <div class="portrait-frame" data-photo-role="hero">
+            <div class="portrait-mask"></div>
+            <img
+              src="assets/images/portrait-placeholder.svg"
+              alt="Portrait of Ritesh Sahebrav Rajput"
+              data-fallback="assets/images/portrait-placeholder.svg"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="about section container" id="about">
+        <div class="section-label">01 / ABOUT</div>
+        <div class="about-header">
+          <h2>BUILDING WITH<br />PURPOSE.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I'm Ritesh, a BCA student and aspiring web developer from Surat. I enjoy turning ideas into functional, responsive and visually polished websites.
+            </p>
+            <p>
+              My focus is on learning by building real projects — combining frontend design, backend functionality and databases to create complete digital experiences.
+            </p>
+          </div>
+
+          <aside class="meta-card" aria-label="Personal details">
+            <div class="meta-row">
+              <span>BASED IN</span>
+              <p>Dindoli, Surat, India</p>
+            </div>
+            <div class="meta-row">
+              <span>CURRENTLY</span>
+              <p>BCA Student</p>
+            </div>
+            <div class="meta-row">
+              <span>FOCUS</span>
+              <p>Web Development</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="work section" id="work">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">02 / SELECTED WORK</div>
+            <h2>SELECTED<br />WORK.</h2>
+            <p>
+              A selection of projects I've built while learning, experimenting and improving my development skills.
+            </p>
+          </div>
+
+          <article class="project project-featured">
+            <div class="project-content">
+              <div class="project-head">
+                <p class="project-number">01</p>
+                <div class="project-type">
+                  <span class="category">FULL-STACK WEB APPLICATION</span>
+                </div>
+              </div>
+
+              <div class="project-main">
+                <div class="project-copy">
+                  <h3>LIBRARY MANAGEMENT SYSTEM</h3>
+                  <p>
+                    A web-based library management system designed to manage books, students, authentication and library operations through a structured digital interface.
+                  </p>
+                </div>
+
+                <div class="project-tech" aria-label="Project technologies">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>PHP</span>
+                  <span>MongoDB</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="#" class="inline-link">VIEW PROJECT <span aria-hidden="true">↗</span></a>
+                  <a href="#" class="inline-link">GITHUB <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-preview preview-library" aria-hidden="true">
+              <img
+                class="project-asset"
+                src="assets/images/project-library-placeholder.svg"
+                alt="Library Management System project preview"
+                data-project-name="project-library"
+                data-fallback="assets/images/project-library-placeholder.svg"
+              />
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-head">
+              <p class="project-number">02</p>
+              <div class="project-type">
+                <span class="category">TRANSPORTATION WEBSITE</span>
+              </div>
+            </div>
+
+            <div class="project-main">
+              <div class="project-copy">
+                <h3>SURAT BRTS WEBSITE</h3>
+                <p>
+                  A responsive website concept focused on presenting Surat BRTS information through a clean and accessible web interface.
+                </p>
+              </div>
+
+              <div class="project-tech" aria-label="Project technologies">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="#" class="inline-link">VIEW PROJECT <span aria-hidden="true">↗</span></a>
+                <a href="#" class="inline-link">GITHUB <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+
+            <div class="project-preview preview-brts" aria-hidden="true">
+              <img
+                class="project-asset"
+                src="assets/images/project-brts-placeholder.svg"
+                alt="Surat BRTS project preview"
+                data-project-name="project-brts"
+                data-fallback="assets/images/project-brts-placeholder.svg"
+              />
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-head">
+              <p class="project-number">03</p>
+              <div class="project-type">
+                <span class="category">RESPONSIVE WEB EXPERIENCE</span>
+              </div>
+            </div>
+
+            <div class="project-main">
+              <div class="project-copy">
+                <h3>KIDS CORNER WEBSITE</h3>
+                <p>
+                  A visually engaging website concept created for a kid-friendly digital experience with a responsive interface.
+                </p>
+              </div>
+
+              <div class="project-tech" aria-label="Project technologies">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="#" class="inline-link">VIEW PROJECT <span aria-hidden="true">↗</span></a>
+                <a href="#" class="inline-link">GITHUB <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+
+            <div class="project-preview preview-kids" aria-hidden="true">
+              <img
+                class="project-asset"
+                src="assets/images/project-kids-placeholder.svg"
+                alt="Kids Corner project preview"
+                data-project-name="project-kids"
+                data-fallback="assets/images/project-kids-placeholder.svg"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="statement section" aria-label="Design statement">
+        <div class="container">
+          <p class="statement-line reveal-scroll">GOOD DESIGN</p>
+          <p class="statement-line reveal-scroll">ISN'T DECORATION.</p>
+          <p class="statement-line reveal-scroll">IT'S EXPERIENCE.</p>
+        </div>
+      </section>
+
+      <section class="skills section container" id="skills">
+        <div class="section-label">03 / CAPABILITIES</div>
+        <h2>CAPABILITIES.</h2>
+
+        <div class="skill-list" aria-label="Professional skills list">
+          <div class="skill-row">
+            <div class="skill-index">01</div>
+            <div class="skill-text">
+              <div class="skill-header">
+                <h3>FRONTEND DEVELOPMENT</h3>
+                <span aria-hidden="true">↗</span>
+              </div>
+              <div class="skill-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-index">02</div>
+            <div class="skill-text">
+              <div class="skill-header">
+                <h3>BACKEND DEVELOPMENT</h3>
+                <span aria-hidden="true">↗</span>
+              </div>
+              <div class="skill-tags">
+                <span>PHP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-index">03</div>
+            <div class="skill-text">
+              <div class="skill-header">
+                <h3>DATABASE</h3>
+                <span aria-hidden="true">↗</span>
+              </div>
+              <div class="skill-tags">
+                <span>MongoDB</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-index">04</div>
+            <div class="skill-text">
+              <div class="skill-header">
+                <h3>DEVELOPMENT TOOLS</h3>
+                <span aria-hidden="true">↗</span>
+              </div>
+              <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="growth section container" aria-labelledby="growth-heading">
+        <div class="section-label">04 / CURRENTLY BUILDING</div>
+        <h2 id="growth-heading">CURRENTLY BUILDING.</h2>
+        <p>
+          I'm continuously improving my development skills by building real-world projects, experimenting with modern interfaces and learning how frontend, backend and databases work together.
+        </p>
+      </section>
+
+      <section class="education section container" id="education">
+        <div class="section-label">05 / EDUCATION</div>
+        <h2>EDUCATION.</h2>
+
+        <div class="education-block">
+          <div class="education-meta">
+            <p class="education-degree">BCA</p>
+          </div>
+
+          <div class="education-copy">
+            <h3>VIMAL TORMAL PODDAR BCA COLLEGE, PANDESARA</h3>
+            <p>Dindoli, Surat</p>
+            <span>CURRENTLY PURSUING</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section" id="contact">
+        <div class="container contact-layout">
+          <div class="contact-copy">
+            <div class="section-label">06 / CONTACT</div>
+            <h2>LET'S BUILD<br />SOMETHING GOOD.</h2>
+            <p>Have an idea, project or opportunity? Let's talk.</p>
+
+            <div class="contact-actions">
+              <a href="mailto:hello@example.com" class="button button-primary">EMAIL ME <span aria-hidden="true">↗</span></a>
+              <a href="#" class="button button-secondary">GITHUB <span aria-hidden="true">↗</span></a>
+              <a href="#" class="button button-secondary">LINKEDIN <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <form class="contact-form" novalidate>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" />
+              <small class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" />
+              <small class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+              <small class="error-message" aria-live="polite"></small>
+            </div>
+
+            <button type="submit" class="button button-primary submit-button">SEND MESSAGE <span aria-hidden="true">↗</span></button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-branding">
+          <div class="footer-brand">RITESH.</div>
+          <p>WEB DEVELOPER · BCA STUDENT</p>
+        </div>
+
+        <div class="footer-location">SURAT, INDIA</div>
+
+        <nav class="footer-nav" aria-label="Footer links">
+          <a href="#work">WORK</a>
+          <a href="#about">ABOUT</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#contact">CONTACT</a>
+          <a href="#">GITHUB</a>
+          <a href="#">LINKEDIN</a>
+        </nav>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 Ritesh Sahebrav Rajput. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
