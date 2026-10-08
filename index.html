@@ -189,10 +189,10 @@
             <div class="project-preview preview-library" aria-hidden="true">
               <img
                 class="project-asset"
-                src="assets/images/project-library-placeholder.svg"
+                src="assets/images/project-library-preview.svg"
                 alt="Library Management System project preview"
                 data-project-name="project-library"
-                data-fallback="assets/images/project-library-placeholder.svg"
+                data-fallback="assets/images/project-library-preview.svg"
               />
             </div>
           </article>
@@ -228,10 +228,10 @@
             <div class="project-preview preview-brts" aria-hidden="true">
               <img
                 class="project-asset"
-                src="assets/images/project-brts-placeholder.svg"
+                src="assets/images/project-brts-preview.svg"
                 alt="Surat BRTS project preview"
                 data-project-name="project-brts"
-                data-fallback="assets/images/project-brts-placeholder.svg"
+                data-fallback="assets/images/project-brts-preview.svg"
               />
             </div>
           </article>
@@ -267,10 +267,10 @@
             <div class="project-preview preview-kids" aria-hidden="true">
               <img
                 class="project-asset"
-                src="assets/images/project-kids-placeholder.svg"
+                src="assets/images/project-kids-preview.svg"
                 alt="Kids Corner project preview"
                 data-project-name="project-kids"
-                data-fallback="assets/images/project-kids-placeholder.svg"
+                data-fallback="assets/images/project-kids-preview.svg"
               />
             </div>
           </article>
@@ -402,6 +402,12 @@
             </div>
 
             <div class="form-field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" maxlength="160" />
+              <small class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="5"></textarea>
               <small class="error-message" aria-live="polite"></small>
@@ -438,6 +444,7 @@
       </div>
     </footer>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

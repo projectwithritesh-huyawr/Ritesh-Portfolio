@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" fill="#e8ece5"/>
+  <rect x="42" y="42" width="1116" height="816" rx="12" fill="#fbfaf6"/>
+  <path d="M54 42h1092a12 12 0 0 1 12 12v67H42V54a12 12 0 0 1 12-12Z" fill="#f6f6f1"/>
+  <path d="M42 121h1116" stroke="#e6e8e1"/>
+  <circle cx="75" cy="80" r="8" fill="#c96d50"/>
+  <circle cx="101" cy="80" r="8" fill="#d7b56e"/>
+  <circle cx="127" cy="80" r="8" fill="#6d9380"/>
+  <text x="177" y="85" fill="#143c39" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="2">SURAT BRTS</text>
+  <text x="775" y="83" fill="#586c66" font-family="Arial,sans-serif" font-size="12">Routes</text>
+  <text x="863" y="83" fill="#586c66" font-family="Arial,sans-serif" font-size="12">Stops</text>
+  <text x="947" y="83" fill="#586c66" font-family="Arial,sans-serif" font-size="12">Travel info</text>
+  <text x="86" y="196" fill="#9a6d52" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2">MOVE AROUND THE CITY</text>
+  <text x="86" y="247" fill="#173b38" font-family="Arial,sans-serif" font-size="37" font-weight="700">Plan your journey.</text>
+  <text x="86" y="277" fill="#6f7f78" font-family="Arial,sans-serif" font-size="14">Find a route and explore the stops along the way.</text>
+  <rect x="86" y="315" width="382" height="454" rx="7" fill="#fff" stroke="#e4e8e2"/>
+  <text x="112" y="357" fill="#253d38" font-family="Arial,sans-serif" font-size="18" font-weight="700">Route planner</text>
+  <text x="112" y="395" fill="#8c9690" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">FROM</text>
+  <rect x="112" y="410" width="330" height="49" rx="4" fill="#f3f5f1"/>
+  <circle cx="135" cy="434" r="6" fill="#458578"/>
+  <text x="153" y="439" fill="#687770" font-family="Arial,sans-serif" font-size="13">Choose a starting stop</text>
+  <text x="112" y="493" fill="#8c9690" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">TO</text>
+  <rect x="112" y="508" width="330" height="49" rx="4" fill="#f3f5f1"/>
+  <circle cx="135" cy="532" r="6" fill="#d0845f"/>
+  <text x="153" y="537" fill="#687770" font-family="Arial,sans-serif" font-size="13">Choose a destination</text>
+  <rect x="112" y="583" width="330" height="45" rx="4" fill="#164c47"/>
+  <text x="229" y="610" fill="#fff" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">FIND A ROUTE</text>
+  <path d="M112 659h330" stroke="#e8ebe5"/>
+  <circle cx="124" cy="692" r="5" fill="#458578"/>
+  <text x="140" y="696" fill="#738079" font-family="Arial,sans-serif" font-size="11">Stops and route details</text>
+  <rect x="494" y="315" width="644" height="454" rx="7" fill="#e9eee7" stroke="#e0e6dd"/>
+  <path d="M512 386 1120 672M528 720l558-380M742 326l-82 430M1010 328l-124 435M510 530l610-52M547 342l342 420" stroke="#fafaf5" stroke-width="23"/>
+  <path d="m560 667 90-64 57-13 82-106 102 5 88-105" stroke="#43877b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m587 368 77 78 90 14 62 89 116 24 105 79" stroke="#d17c5d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m742 326-2 112 49 72-17 73 46 77" stroke="#d4a952" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="560" cy="667" r="13" fill="#fbfaf6" stroke="#43877b" stroke-width="7"/>
+  <circle cx="841" cy="484" r="13" fill="#fbfaf6" stroke="#43877b" stroke-width="7"/>
+  <circle cx="1039" cy="384" r="13" fill="#fbfaf6" stroke="#43877b" stroke-width="7"/>
+  <circle cx="587" cy="368" r="11" fill="#fbfaf6" stroke="#d17c5d" stroke-width="6"/>
+  <circle cx="1037" cy="731" r="11" fill="#fbfaf6" stroke="#d17c5d" stroke-width="6"/>
+  <rect x="803" y="362" width="231" height="42" rx="4" fill="#fbfaf6"/>
+  <circle cx="821" cy="383" r="5" fill="#43877b"/>
+  <text x="835" y="387" fill="#526860" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing=".5">MOCK PREVIEW / ROUTE MAP</text>
+</svg>

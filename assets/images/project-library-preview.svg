@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" fill="#dce5df"/>
+  <rect x="42" y="42" width="1116" height="816" rx="12" fill="#f7f7f3"/>
+  <path d="M54 42h204v816H54a12 12 0 0 1-12-12V54a12 12 0 0 1 12-12Z" fill="#173c35"/>
+  <path d="M82 98h26v26H82z" rx="6" fill="#e8b87b"/>
+  <path d="M88 106h14m-14 6h14m-14 6h9" stroke="#173c35" stroke-width="2" stroke-linecap="round"/>
+  <text x="120" y="119" fill="#f7f4eb" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="2">SHELF</text>
+  <text x="82" y="177" fill="#92a79c" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2">LIBRARY</text>
+  <rect x="72" y="197" width="166" height="43" rx="5" fill="#28534a"/>
+  <circle cx="94" cy="218" r="5" fill="#e8b87b"/>
+  <text x="111" y="222" fill="#f7f4eb" font-family="Arial,sans-serif" font-size="13">Overview</text>
+  <circle cx="94" cy="276" r="5" fill="#759188"/>
+  <text x="111" y="280" fill="#d0dbd4" font-family="Arial,sans-serif" font-size="13">Book catalog</text>
+  <circle cx="94" cy="326" r="5" fill="#759188"/>
+  <text x="111" y="330" fill="#d0dbd4" font-family="Arial,sans-serif" font-size="13">Members</text>
+  <circle cx="94" cy="376" r="5" fill="#759188"/>
+  <text x="111" y="380" fill="#d0dbd4" font-family="Arial,sans-serif" font-size="13">Circulation</text>
+  <text x="296" y="103" fill="#829087" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2">LIBRARY / OVERVIEW</text>
+  <text x="296" y="151" fill="#18221e" font-family="Arial,sans-serif" font-size="30" font-weight="700">Library overview</text>
+  <rect x="957" y="76" width="157" height="30" rx="15" fill="#edf1eb"/>
+  <circle cx="977" cy="91" r="4" fill="#61866f"/>
+  <text x="1000" y="95" fill="#42554a" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">MOCK PREVIEW</text>
+  <rect x="296" y="182" width="240" height="105" rx="6" fill="#e8eee8"/>
+  <rect x="554" y="182" width="240" height="105" rx="6" fill="#f2e9d9"/>
+  <rect x="812" y="182" width="302" height="105" rx="6" fill="#e7ecee"/>
+  <text x="317" y="214" fill="#63746a" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">BOOKS IN CATALOG</text>
+  <text x="317" y="264" fill="#183c35" font-family="Arial,sans-serif" font-size="34" font-weight="700">—</text>
+  <text x="575" y="214" fill="#86765e" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">ACTIVE LOANS</text>
+  <text x="575" y="264" fill="#71553d" font-family="Arial,sans-serif" font-size="34" font-weight="700">—</text>
+  <text x="833" y="214" fill="#65747a" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">REGISTERED MEMBERS</text>
+  <text x="833" y="264" fill="#344f58" font-family="Arial,sans-serif" font-size="34" font-weight="700">—</text>
+  <text x="296" y="343" fill="#18221e" font-family="Arial,sans-serif" font-size="17" font-weight="700">Recently added</text>
+  <text x="296" y="375" fill="#849087" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">TITLE</text>
+  <text x="757" y="375" fill="#849087" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">AUTHOR</text>
+  <text x="961" y="375" fill="#849087" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">STATUS</text>
+  <path d="M296 390h818M296 472h818M296 554h818M296 636h818M296 718h818" stroke="#e3e7e0"/>
+  <rect x="298" y="408" width="38" height="49" rx="2" fill="#bc7656"/>
+  <path d="M306 417h22m-22 6h16" stroke="#f5e6d4" stroke-width="2" stroke-linecap="round"/>
+  <rect x="306" y="434" width="11" height="12" rx="1" fill="#e5bc7a"/>
+  <text x="350" y="431" fill="#24332c" font-family="Arial,sans-serif" font-size="12" font-weight="700">Book title</text>
+  <text x="350" y="448" fill="#8a948b" font-family="Arial,sans-serif" font-size="10">Catalog entry</text>
+  <text x="757" y="438" fill="#6f7b73" font-family="Arial,sans-serif" font-size="12">Author name</text>
+  <rect x="961" y="418" width="85" height="25" rx="12" fill="#e3eee4"/>
+  <circle cx="976" cy="430" r="3" fill="#66876b"/>
+  <text x="985" y="434" fill="#4c7054" font-family="Arial,sans-serif" font-size="10">Available</text>
+  <rect x="298" y="490" width="38" height="49" rx="2" fill="#557b7a"/>
+  <path d="M306 500h22m-22 6h16" stroke="#e5eee2" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="318" cy="526" r="7" fill="#d7ba83"/>
+  <text x="350" y="513" fill="#24332c" font-family="Arial,sans-serif" font-size="12" font-weight="700">Book title</text>
+  <text x="350" y="530" fill="#8a948b" font-family="Arial,sans-serif" font-size="10">Catalog entry</text>
+  <text x="757" y="520" fill="#6f7b73" font-family="Arial,sans-serif" font-size="12">Author name</text>
+  <rect x="961" y="500" width="85" height="25" rx="12" fill="#f3e9d9"/>
+  <circle cx="976" cy="512" r="3" fill="#ad7951"/>
+  <text x="985" y="516" fill="#866344" font-family="Arial,sans-serif" font-size="10">On loan</text>
+  <rect x="298" y="572" width="38" height="49" rx="2" fill="#6c718c"/>
+  <path d="M306 582h22m-22 6h16" stroke="#eeece4" stroke-width="2" stroke-linecap="round"/>
+  <path d="M308 610h18" stroke="#d6bc81" stroke-width="5"/>
+  <text x="350" y="595" fill="#24332c" font-family="Arial,sans-serif" font-size="12" font-weight="700">Book title</text>
+  <text x="350" y="612" fill="#8a948b" font-family="Arial,sans-serif" font-size="10">Catalog entry</text>
+  <text x="757" y="602" fill="#6f7b73" font-family="Arial,sans-serif" font-size="12">Author name</text>
+  <rect x="961" y="582" width="85" height="25" rx="12" fill="#e3eee4"/>
+  <circle cx="976" cy="594" r="3" fill="#66876b"/>
+  <text x="985" y="598" fill="#4c7054" font-family="Arial,sans-serif" font-size="10">Available</text>
+</svg>

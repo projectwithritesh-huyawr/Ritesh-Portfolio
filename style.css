@@ -1081,6 +1081,15 @@ body.loaded .reveal-scroll.is-visible {
   font-size: 0.8rem;
 }
 
+.form-status.is-error {
+  color: #ff9b9b;
+}
+
+.submit-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
 .submit-button {
   width: fit-content;
   margin-top: 0.4rem;
