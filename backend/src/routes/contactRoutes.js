@@ -9,6 +9,10 @@ const router = Router();
 
 router.post('/', contactLimiter, [
   body('name').trim().isLength({ min: 1, max: 100 }).withMessage('Please enter your name.'),
+  body('phone').trim().custom((value) => {
+    const digits = value.replace(/\D/g, '');
+    return /^\+?[0-9][0-9\s().-]{5,18}[0-9]$/.test(value) && digits.length >= 7 && digits.length <= 15;
+  }).withMessage('Please enter a valid mobile number.'),
   body('email').trim().isEmail().withMessage('Please enter a valid email address.').normalizeEmail(),
   body('subject').trim().isLength({ min: 1, max: 160 }).withMessage('Please enter a subject.'),
   body('message').trim().isLength({ min: 10, max: 5000 }).withMessage('Please enter a message between 10 and 5000 characters.')

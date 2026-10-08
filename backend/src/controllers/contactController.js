@@ -1,9 +1,10 @@
 import nodemailer from 'nodemailer';
 import Message from '../models/Message.js';
 
+const notificationEmail = () => process.env.NOTIFICATION_EMAIL;
 const emailIsConfigured = () => [
-  'EMAIL_HOST', 'EMAIL_USER', 'EMAIL_PASSWORD', 'EMAIL_FROM', 'ADMIN_EMAIL'
-].every((key) => process.env[key]);
+  'EMAIL_HOST', 'EMAIL_USER', 'EMAIL_PASSWORD', 'EMAIL_FROM'
+].every((key) => process.env[key]) && Boolean(notificationEmail());
 
 export const submitContact = async (req, res) => {
   const savedMessage = await Message.create({ ...req.body, status: 'unread' });
@@ -21,10 +22,17 @@ export const submitContact = async (req, res) => {
       });
       await transporter.sendMail({
         from: process.env.EMAIL_FROM,
-        to: process.env.ADMIN_EMAIL,
+        to: notificationEmail(),
         replyTo: req.body.email,
         subject: `Portfolio contact: ${req.body.subject}`,
-        text: `Name: ${req.body.name}\nEmail: ${req.body.email}\n\n${req.body.message}`
+        text: [
+          `Name: ${req.body.name}`,
+          `Mobile: ${req.body.phone}`,
+          `Email: ${req.body.email}`,
+          `Subject: ${req.body.subject}`,
+          '',
+          req.body.message
+        ].join('\n')
       });
     } catch (error) {
       console.error('Contact notification email could not be delivered.');

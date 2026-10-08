@@ -341,6 +341,7 @@ const initForm = () => {
 
   const fields = {
     name: form.querySelector('#name'),
+    phone: form.querySelector('#phone'),
     email: form.querySelector('#email'),
     subject: form.querySelector('#subject'),
     message: form.querySelector('#message')
@@ -372,6 +373,13 @@ const initForm = () => {
 
     if (!fields.name.value.trim()) {
       setError(fields.name, 'Please enter your name.');
+      valid = false;
+    }
+
+    const phoneValue = fields.phone.value.trim();
+    const phoneDigits = phoneValue.replace(/\D/g, '');
+    if (!/^\+?[0-9][0-9\s().-]{5,18}[0-9]$/.test(phoneValue) || phoneDigits.length < 7 || phoneDigits.length > 15) {
+      setError(fields.phone, 'Please enter a valid mobile number.');
       valid = false;
     }
 
@@ -407,6 +415,7 @@ const initForm = () => {
         method: 'POST',
         body: JSON.stringify({
           name: fields.name.value.trim(),
+          phone: fields.phone.value.trim(),
           email: fields.email.value.trim(),
           subject: fields.subject.value.trim(),
           message: fields.message.value.trim()

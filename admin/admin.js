@@ -78,6 +78,9 @@ const showMessage = async (id) => {
     const message = result.data;
     document.querySelector('#detail-subject').textContent = message.subject;
     document.querySelector('#detail-from').textContent = `${message.name} · ${message.email}`;
+    const phoneLink = document.querySelector('#detail-phone');
+    phoneLink.textContent = `Mobile: ${message.phone || 'Not provided'}`;
+    phoneLink.href = message.phone ? `tel:${message.phone.replace(/[^\d+]/g, '')}` : 'tel:';
     document.querySelector('#detail-date').textContent = formatDate(message.createdAt);
     document.querySelector('#detail-body').textContent = message.message;
     document.querySelector('#detail-email').href = `mailto:${encodeURIComponent(message.email)}?subject=${encodeURIComponent(`Re: ${message.subject}`)}`;
@@ -98,7 +101,7 @@ const renderMessages = () => {
   messages.forEach((message) => {
     const row = element('tr');
     const from = element('td');
-    from.append(element('span', 'table-primary', message.name), element('span', 'table-secondary', message.email));
+    from.append(element('span', 'table-primary', message.name), element('span', 'table-secondary', `${message.email} · ${message.phone || 'No phone'}`));
     const subject = element('td', '', message.subject);
     const date = element('td', '', formatDate(message.createdAt));
     const status = element('td');

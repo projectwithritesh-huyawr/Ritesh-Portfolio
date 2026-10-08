@@ -57,9 +57,30 @@ test('admin endpoints reject requests without a JWT', async () => {
 
 test('contact and login validate before reaching database routes', async () => {
   const jsonHeaders = { 'Content-Type': 'application/json' };
+  const missingPhone = await api('/api/contact', {
+    method: 'POST', headers: jsonHeaders,
+    body: JSON.stringify({ name: 'Visitor', email: 'visitor@example.com', subject: 'Hello', message: 'A sufficiently long message.' })
+  });
+  assert.equal(missingPhone.status, 400);
+  assert.equal((await missingPhone.json()).message, 'Please enter a valid mobile number.');
+
+  const invalidPhone = await api('/api/contact', {
+    method: 'POST', headers: jsonHeaders,
+    body: JSON.stringify({ name: 'Visitor', phone: 'abc', email: 'visitor@example.com', subject: 'Hello', message: 'A sufficiently long message.' })
+  });
+  assert.equal(invalidPhone.status, 400);
+  assert.equal((await invalidPhone.json()).message, 'Please enter a valid mobile number.');
+
+  const validPhone = await api('/api/contact', {
+    method: 'POST', headers: jsonHeaders,
+    body: JSON.stringify({ name: 'Visitor', phone: '+91 98765 43210', email: 'visitor@example.com', subject: 'Hello', message: 'A sufficiently long message.' })
+  });
+  assert.equal(validPhone.status, 503);
+  assert.equal((await validPhone.json()).message, 'Database service is not configured.');
+
   const contact = await api('/api/contact', {
     method: 'POST', headers: jsonHeaders,
-    body: JSON.stringify({ name: 'Visitor', email: 'invalid-email', subject: 'Hello', message: 'A sufficiently long message.' })
+    body: JSON.stringify({ name: 'Visitor', phone: '+91 98765 43210', email: 'invalid-email', subject: 'Hello', message: 'A sufficiently long message.' })
   });
   assert.equal(contact.status, 400);
   assert.equal((await contact.json()).message, 'Please enter a valid email address.');

@@ -54,8 +54,22 @@ Edit `backend/.env` and set:
 - `ADMIN_PASSWORD`: a unique password of at least 16 characters.
 - `CLIENT_URL`: `http://localhost:8000` for local frontend testing.
 - `VISITOR_HASH_SECRET`: a separate random secret used only to hash visitor IP addresses.
+- `NOTIFICATION_EMAIL`: already set in the example to `projectwithriteshh@gmail.com`; this is where contact notifications are delivered.
 
-Leave the email variables empty to save contact messages without sending notifications. To enable notifications, configure `EMAIL_HOST`, `EMAIL_PORT`, `EMAIL_USER`, `EMAIL_PASSWORD`, and `EMAIL_FROM` with credentials from your mail provider. The form will say that the message was saved, not emailed, when notification settings are missing or delivery fails.
+The form collects name, mobile number, email, subject, and message. All five are saved with the contact record. To deliver notifications to `projectwithriteshh@gmail.com`, turn on 2-Step Verification for that Google account and create a Google **App Password**. Use the App Password only in the backend `.env` or hosting provider's private environment settings; never use or publish the normal Gmail password.
+
+For Gmail, set these backend values:
+
+```text
+NOTIFICATION_EMAIL=projectwithriteshh@gmail.com
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=465
+EMAIL_USER=projectwithriteshh@gmail.com
+EMAIL_PASSWORD=<Google App Password, not the normal Gmail password>
+EMAIL_FROM=Ritesh Portfolio <projectwithriteshh@gmail.com>
+```
+
+Until those SMTP settings are present and valid, the API still saves the message in MongoDB and honestly reports that email notification is not configured or could not be delivered. Configure the same private values on the backend hosting service for production.
 
 Create your first admin and optionally seed the three genuine portfolio projects and the skills already shown on the site:
 
@@ -116,10 +130,11 @@ ADMIN_PASSWORD=<strong initial admin password>
 ADMIN_NAME=Ritesh Sahebrav Rajput
 VISITOR_HASH_SECRET=<separate random secret>
 EMAIL_HOST=<optional mail provider host>
-EMAIL_PORT=<optional mail provider port>
-EMAIL_USER=<optional mail provider user>
-EMAIL_PASSWORD=<optional mail provider password>
-EMAIL_FROM=<optional verified sender address>
+EMAIL_PORT=465
+EMAIL_USER=projectwithriteshh@gmail.com
+EMAIL_PASSWORD=<private Google App Password>
+EMAIL_FROM=Ritesh Portfolio <projectwithriteshh@gmail.com>
+NOTIFICATION_EMAIL=projectwithriteshh@gmail.com
 ```
 
 Use the exact frontend origin in `CLIENT_URL`, with no path or trailing slash. For a project site, the origin is normally `https://<username>.github.io`; GitHub Pages' repository path is not part of the origin. Do not set production CORS to `*`. Configure the hosting provider's health-check path as `/api/health` if it supports health checks.
@@ -145,7 +160,7 @@ All endpoints are under `/api`. Successful responses use `success: true`, a `dat
 | POST | `/auth/login` | Public, rate limited | Admin sign-in |
 | GET | `/auth/me` | Admin | Verify current session |
 | POST | `/auth/logout` | Admin | Revoke current admin tokens |
-| POST | `/contact` | Public, validated, rate limited | Save message; optionally email owner |
+| POST | `/contact` | Public, validated, rate limited | Save name, phone, email, subject, and message; notify `NOTIFICATION_EMAIL` when SMTP is configured |
 | GET | `/projects` | Public | List projects in display order |
 | GET | `/projects/:slug` | Public | Read a project |
 | POST | `/projects` | Admin | Create a project |
@@ -206,4 +221,4 @@ Then visit `http://localhost:8000`.
 
 - No fake employers, certifications, or achievements are included.
 - The education section clearly states the current BCA pursuit.
-- The contact form is frontend-ready and validates input without pretending to send email messages.
+- The contact form sends name, mobile number, email, subject, and message to the API. Email delivery requires the private SMTP settings above.
